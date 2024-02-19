@@ -1,0 +1,6 @@
+.slider button::before{
+    color: white !important;
+}
+.slider li{
+    width: 5px !important;
+}

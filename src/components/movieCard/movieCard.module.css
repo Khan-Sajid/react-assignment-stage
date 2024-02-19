@@ -1,0 +1,20 @@
+.movieCard{
+    border: 2px goldenrod solid;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.movieCard::-webkit-scrollbar {
+    display: none;
+}
+.movieCard img{
+    width: 200px;
+    height: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .movieCard img{
+        width: 400px;
+    }
+}

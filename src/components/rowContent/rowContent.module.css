@@ -1,0 +1,20 @@
+.rowSection{
+    padding: 20px 0px;
+}
+.rowSection p{
+ font-size: large;
+ margin: 10px 20px;
+ color: white;
+}
+.scrollSection{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 8px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0 20px;
+}
+.scrollSection::-webkit-scrollbar {
+    display: none;
+}

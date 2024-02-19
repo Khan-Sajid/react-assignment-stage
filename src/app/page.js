@@ -9,7 +9,10 @@ export default async function Home() {
   return (
     <main className={styles.main}>
       <CarouselBanner data={carouselData} />
-      <RowContent data={rowData} />
+      <RowContent data={rowData} sectionHeading={"section 1"} />
+      <RowContent data={rowData} sectionHeading={"section 2"} />
+      <RowContent data={rowData} sectionHeading={"section 3"} />
+      <RowContent data={rowData} sectionHeading={"section 4"} />
     </main>
   );
 }
