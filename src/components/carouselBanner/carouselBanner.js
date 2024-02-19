@@ -31,14 +31,14 @@ const CarouselBanner = (props) => {
       />
       <div className={styles.slider}>
         <Slider {...settings}>
-          {carouselData?.carousel?.map((carouselItem) => {
+          {carouselData?.carousel?.map((carouselItem, index) => {
             let url = "";
             if (width > 768) {
               url = carouselData?.rootUrl + "/" + carouselItem?.ratio3;
             } else {
               url = carouselData?.rootUrl + "/" + carouselItem?.ratio1;
             }
-            return <img src={url}></img>;
+            return <img key={index} src={url}></img>;
           })}
         </Slider>
       </div>

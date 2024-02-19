@@ -11,7 +11,11 @@ export default async function Home() {
     <main className={styles.main}>
       <Header />
       <CarouselBanner data={carouselData} />
-      <RowContent data={rowData} sectionHeading={"section 1"} />
+      <RowContent
+        data={rowData}
+        sectionHeading={"section 1"}
+        numberNeeded={true}
+      />
       <RowContent data={rowData} sectionHeading={"section 2"} />
       <RowContent data={rowData} sectionHeading={"section 3"} />
       <RowContent data={rowData} sectionHeading={"section 4"} />

@@ -15,6 +15,11 @@
     scrollbar-width: none;
     padding: 0 20px;
 }
+.increaseGap{
+    gap:30px;
+    padding:0 30px;
+    overflow-y: hidden;
+}
 .scrollSection::-webkit-scrollbar {
     display: none;
 }

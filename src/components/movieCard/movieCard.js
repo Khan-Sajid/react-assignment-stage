@@ -8,8 +8,9 @@ const MovieCard = ({
   rootUrlVertical,
   rootUrlHorizontal,
   isMobile,
+  number,
 }) => {
-  console.log({ isMobile });
+  console.log("number", number);
   let url = "";
   if (isMobile) {
     url = rootUrlVertical + "/" + movieData?.vertical;
@@ -17,13 +18,11 @@ const MovieCard = ({
     url = rootUrlHorizontal + "/" + movieData?.horizontal;
   }
   return (
-    <div className={styles.movieCard}>
-      <img src={url} />
-      {/* <Image
-        src={url}
-        height={isMobile ? 300 : 200}
-        width={isMobile ? 150 : 300}
-      /> */}
+    <div className={styles.outerDiv}>
+      <div className={styles.movieCard}>
+        <img src={url} />
+      </div>
+      {number && <span className={styles.number}>{number}</span>}
     </div>
   );
 };

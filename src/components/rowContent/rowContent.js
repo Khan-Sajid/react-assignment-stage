@@ -11,8 +11,14 @@ const RowContent = (props) => {
   return (
     <section className={styles.rowSection}>
       <p>{props?.sectionHeading}</p>
-      <div className={styles.scrollSection}>
-        {rowData?.map((movieData) => {
+      <div
+        className={
+          props?.numberNeeded
+            ? `${styles.increaseGap} ${styles.scrollSection}`
+            : `${styles.scrollSection}`
+        }
+      >
+        {rowData?.map((movieData, index) => {
           return (
             <MovieCard
               key={movieData?._id}
@@ -20,6 +26,7 @@ const RowContent = (props) => {
               rootUrlHorizontal={rootUrlHorizontal}
               rootUrlVertical={rootUrlVertical}
               isMobile={width < 768}
+              number={props?.numberNeeded ? index + 1 : undefined}
             />
           );
         })}

@@ -5,6 +5,8 @@
     flex-shrink: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    height: 100%;
+    /* position: relative; */
 }
 .movieCard::-webkit-scrollbar {
     display: none;
@@ -13,8 +15,24 @@
     width: 200px;
     height: 100%;
 }
+.outerDiv{
+    position: relative;
+}
+.number{
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left:-25px;
+    font-size: 140px;
+    line-height: 120px;
+    text-shadow: 2px 0 #f2a128, -2px 0 #f2a128, 0 2px #f2a128, 0 -2px #f2a128,
+        1px 1px #f2a128, -1px -1px #f2a128, 1px -1px #f2a128, -1px 1px #f2a128;
+}
 @media only screen and (min-width: 768px) {
     .movieCard img{
         width: 400px;
+    }
+    .number{
+        bottom: 10px;
     }
 }
