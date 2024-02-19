@@ -17,7 +17,7 @@ const CarouselBanner = (props) => {
     slidesToScroll: 1,
   };
   return (
-    <section>
+    <section className={styles.carouselSection}>
       <link
         rel='stylesheet'
         type='text/css'

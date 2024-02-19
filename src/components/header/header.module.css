@@ -1,0 +1,24 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: black;
+    z-index: 100;
+    padding: 0 20px;
+}
+.logo img{
+    height: 40px;
+}
+.rightSideContent{
+    display: flex;
+    gap:8px
+}
+.rightSideContent select{
+    border-radius: 5px;
+    border: 2px solid grey;
+}
